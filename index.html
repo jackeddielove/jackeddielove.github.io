@@ -6,106 +6,219 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="styles.css">
+
+    <script src="libraries/p5.min.js"></script>
    
     <title>Portfolio</title>
 </head>
+
+<style>
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      /* border-bottom: 1px dotted black; */
+    }
+    
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 200px;
+      background-color: rgb(232, 212, 111);
+      color: black;
+      /* text-align: center; */
+      /* border-radius: 6px; */
+      border: 1px solid black;
+      padding: 5px 5px;
+    
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+    }
+    
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+</style>
+
 <body>
-    <!--nav bar-->
-    <nav>
-        <div class="left">
-            <a href="/">Jack Love</a>
-        </div>
-        <div class="right">
-            <a href="http://github.com" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-github"></i>
-                <span>Github</span>
-            </a>
 
-            <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin"></i>
-                <span>LinkedIn</span>
-            </a>
-
-            <a href="mailto:jackeddielove@gmail.com">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Email</span>
-            </a>
-        </div>
-    </nav>
     <main>
-        <!--SECTION 1: hero-->
-        <section class="hero-section">
+        <!--website heading-->
+        <div class="heading">
+            <a href="/">Personal website of Jack Love</a>
+        </div>
+
+        <!--bio-->
+        <section class="bio">
             <div class="text">
-                <h2>Hi, I'm Jack</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur molestias, libero nobis harum consectetur voluptas dignissimos rerum porro. Mollitia laborum necessitatibus ea accusantium dolorem sint magnam ipsam dignissimos, expedita error deserunt, quasi vel voluptatem maiores repudiandae illo autem? Ipsa, repudiandae quo. Maiores perferendis fuga ut reprehenderit, ipsa ratione voluptatum consectetur.
-                </p>
-                <div class="links">
-                    <a href="#skills">
-                        <i class="fa-solid fa-code"></i>
-                        <span>Skills</span>
-                    </a>
-
-                    <a href="#testimony">
-                        <i class="fa-solid fa-pen"></i>
-                        <span>Testimony</span>
-                    </a>
-
-                    <a href="#contact">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>Contact</span>
-                    </a>
-                </div>
+                <p>Hello!</p>
+                <p>I am a mathematician, artist, and educator in San Francisco, California.</p>
+                <p>I hold a PhD in mathematics from George Mason University and a Masters in Design from California College of the Arts.</p>
+                <p>I have held faculty positions at George Mason University, San Francisco State University, and City College of San Francisco.
+                <p>I was a founding co-director at San Francisco Math Circle Summer Camp and Outreach Director at Mason Experimental Geometry Lab at George Mason University.</p>
+                <p>I was an exhibiting artist at the Joint Mathematics Meetings in 2014 and 2019.</p>
+                <p>I am currently a volunteer at Mount Tamalpais College at San Quentin Rehabilitation Center.  I also create fun math presentations for K-12 classrooms.</p>
             </div>
+
             <div class="headshot">
-                <img src="images/hero-headshot.webp" alt="jack love headshot">
+                    <img src="images/hero-headshot-3.webp" alt="jack love headshot">
             </div>
         </section>
 
-        <!--SECTION 2: skills-->
-        <section id="skills" class="skills-section">
-            <h2>Skills</h2>
+        <!--links-->
+
+        <div class="links">
+            <div class="pc">
+                <a href="#artwork">Artwork</a>
+                <a href="#outreach">Math Outreach</a>
+                <a href="#cv">Curriculum Vitae</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="mobile">
+                <a href="#artwork">Art</a>
+                <a href="#outreach">Outreach</a>
+                <a href="#cv">CV</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+
+
+        <!--artwork-->
+
+        <div class="heading" id="artwork">
+            <a href="#artwork">Artwork</a>
+        </div>
+
+        <section class="artwork" style="height:1000px; position: relative;">
+
+            <div class="pictures" style="max-height: 100%; overflow: auto;">
+                <div class="tooltip">
+                    <img src="images/apeirotope_rhino.webp" alt="an apeirotope approximation rendered in rhino">
+                    <!-- <span class="tooltiptext">An apeirotope is a theoretical object with infinitely many facets, represented here as hexagons. If the orb were continued to its north pole, the hexagons would get infinitely small. A light shined from the north pole toward the ground would produce a regular hexagonal tiling on the floor extending infinitely in every direction.</span> -->
+                </div>
+
+                <img src="images/mdf_complex.webp" alt="a three dimensional geometric puzzle">
+
+                <img src="images/somewhere_something.webp" alt="an organic geometric construction from cardboard">
+
+                <img src="images/table.webp" alt="a geometric end table">
+
+                <img src="images/newton_polytope.webp" alt="a complex network">
+
+                <img src="images/lattice.webp" alt="a three dimensional lattice rendered in rhino">
+
+                <img src="images/paper-1.webp" alt="a paper geometric model">
+
+                <img src="images/paper-2.webp" alt="a paper geometric model">
+
+                <img src="images/paper-3.webp" alt="a paper geometric model">
+
+                <img src="images/paper-4.webp" alt="a paper geometric model">
+
+                <img src="images/paper-5.webp" alt="a paper geometric model">
+
+                <img src="images/paper-6.webp" alt="a paper geometric model">
+
+                <img src="images/apeirotope.webp" alt="an apeirotope approximation rendered in SketchUp">
+
+                <img src="images/associahedron.webp" alt="an associahedron's dual fan rendered in SketchUp">
+
+                <img src="images/chair.webp" alt="a modern chair sculpture">
+            </div>
+        </section>
+
+         <!--math outreach-->
+
+         <div class="heading" id="outreach">
+            <a href="#outreach">Math outreach</a>
+        </div>
+
+        <section class="outreach">
             <div class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id distinctio quis quisquam, cumque accusantium, obcaecati magni, illum dolorem facilis quod illo quam cum. Eos ducimus asperiores iure sunt accusamus nisi.
+                <p>I define math outreach as:</p>
+                <p style="font-weight: 600;">The endeavor to create positive mathematical experiences for others.</p>
+                <p>I don't think that everyone needs to love math. I don't even think that mathematics is all that useful to most of us.</p>
+                <p>I do think that math is misunderstood and underappreciated as a creative practice.</p>
+                <p>I do math outreach to grow that understanding and appreciation because there is something special about mathematics and there is something special about expanding our perspectives.</p>
+                <p>I find joy in mathematics, and I do math outreach to share that joy with others.</p>
             </div>
 
-            <div class="cells">
-                <div class="cell">
-                    <img src="images/html-logo.webp" alt="html logo">
-                    <span>HTML</span>
-                </div>
+            <div class="offerings" style="max-height: 100%; overflow: auto;">
+                <p>I am available to visit K-12 classrooms, teacher development days, or any other space of learning and curiosity. <a href = "#contact" style="font-weight: 600; color: var(--text-color); text-decoration-line: underline;">Contact me</a> to book a date.</p>
+                <p style="font-weight: 600;">Current offerings</p>
 
-                <div class="cell">
-                    <img src="images/css-logo.webp" alt="css logo">
-                    <span>CSS</span>
-                </div>
+                <!-- <iframe src="https://jackeddielove.github.io/makingSpace/" width="500px" height="288px" style="border: none"></iframe> -->
 
-                <div class="cell">
-                    <img src="images/javascript-logo.webp" alt="javascript logo">
-                    <span>Javascript</span>
-                </div>
+                <video autoplay loop muted>
+                    <source src="images/makingSpace-title.mp4" type="video/mp4">
+                </video>
 
-                <div class="cell">
-                    <img src="images/node-logo.webp" alt="node logo">
-                    <span>Node.js</span>
-                </div>
+                <p>Ages: Middle school to high school and adult</p>
+                <p>Running time: 60 min.</p>
+                <p>Overview: Making Space is an interactive presentation that puts higher dimensions on solid ground by connecting them with familiar ideas from algebra and geometry. Below are excerpts from the presentation.</p>
+                
+                    <div class="videos">
+                        <video autoplay loop muted>
+                            <source src="images/makingSpace-2d.mp4" type="video/mp4">
+                        </video>
 
-                <div class="cell">
-                    <img src="images/react-logo.webp" alt="react logo">
-                    <span>React.js</span>
-                </div>
+                        <video autoplay loop muted>
+                            <source src="images/makingSpace-3d.mp4" type="video/mp4">
+                        </video>
+
+                        <video autoplay loop muted>
+                            <source src="images/makingSpace-2dSlices.mp4" type="video/mp4">
+                        </video>
+
+                        <video autoplay loop muted>
+                            <source src="images/makingSpace-3dSlices.mp4" type="video/mp4">
+                        </video>
+                    </div>
             </div>
         </section>
 
-        <!--SECTION 3: testimonoy-->
-        <section id="testimonoy"></section>
+        <!--cv-->
 
-        <!--SECTION 4: contact-->
-        <section id="contact"></section>
+        <div class="heading" id="cv">
+            <a href="#cv">Curriculum Vitae</a>
+        </div>
+
+        <section class="cv">
+            <div class="cv-container" style="max-height: 100%; overflow: auto;">
+                <img src="images/cv-1.webp">
+                <img src="images/cv-2.webp">
+                <img src="images/cv-3.webp">
+                <img src="images/cv-4.webp">
+            </div>
+        </section>
+
+        <!--contact-->
+
+        <div class="heading" id="contact">
+            <a href="#contact">Contact</a>
+        </div>
+
+        <section class="contact">
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email">
+
+                <label for="message">Message</label>
+                <textarea id="message" cols="30" rows="10"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
     </main>
 </body>
 </html>

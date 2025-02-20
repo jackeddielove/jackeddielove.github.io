@@ -2,6 +2,7 @@
     --text-color: #1a1c20;
     --link-color: #4a76ee;
     --background-color: #eeeff1;
+    --border-1-color: #555555;
 }
 
 * {
@@ -15,197 +16,469 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair';
     background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 30px auto;
 }
+
 a {
     color: var(--link-color);
     text-decoration: none;
 }
 
-/*NAVBAR*/
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-    height: 80px;
+p {
+    margin-bottom: 10px;
 }
 
-nav .left a {
+/*heading*/
+
+.heading {
+    margin-bottom: 10px;
+    padding-top: 20px;
+    margin-left: 80px;
+}
+
+.heading a {
     color: var(--text-color);
     font-size: 22px;
     font-weight: 600;
 }
 
-nav .right a {
-    color: var(--text-color);
-    margin: 0 10px;
-}
+/*bio*/
 
-nav .right a:last-child {
-    color: var(--background-color);
-    background-color: var(--text-color);
-    padding: 5px 15px;
-    border-radius: 5px;
-}
-
-nav .right a span{
-    margin-left: 5px;
-}
-
-/*SECTION 1: Hero*/
-
-.hero-section {
+.bio {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
-    margin: 50px 0;
-    margin-bottom: 100px;
-    gap: 40px;
-}
-
-.hero-section .text {
-    flex: 5;
-}
-
-.hero-section .text h2 {
-    font-size: 45px;
-}
-
-.hero-section .text .links {
-    margin-top: 25px;
-}
-
-.hero-section .text .links a {
-    display: inline-block;
-    padding: 5px 10px;
-    border: solid var(--link-color);
-    border-radius: 5px;
-    margin-right: 10px;
     margin-bottom: 10px;
-    transition: .1s;
-}
-
-.hero-section .text .links a:hover {
-    color: var(--text-color);
+    margin-left: 50px;
+    margin-right: 50px;
     border: 2px solid var(--text-color);
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.hero-section .headshot {
+.bio .text {
+    flex: 5;
+    font-size: 25px;
+    margin-right: 80px;
+}
+
+.bio .headshot {
     flex: 2;
-    display: flex;
-    justify-content: right;
 }
 
-.hero-section .headshot img {
-    border-radius: 50%;
+.bio .headshot img {
     width: 350px;
 }
 
-/*SECTION 2: Skills*/
-.skills-section {
-    padding: 0 50px;
-    margin-bottom: 100px;
+/*links*/
+
+.links {
+    margin-bottom: 250px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
-.skills-section h2 {
-    text-align: center;
-    font-size: 35px;
+.links a {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
 }
 
-.skills-section .text {
-    text-align: center;
-    margin-bottom: 20px;
+.links .pc {
+    display: flex;
+    justify-content: space-between;
 }
 
-.skills-section .cells {
+.links .mobile {
+    display: none;
+}
+
+/*artwork*/
+
+.artwork {
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px solid var(--text-color);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 250px;
+}
+
+.artwork .pictures {
     display: flex;
     justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
-.skills-section .cells .cell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    padding: 10px 20px;
-    margin: 10px;
-    border: 1.5px solid #d3d3d3;
-    border-radius: 5px;
-    gap: 10px;
-}
-
-.skills-section .cells .cell img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
+.artwork .pictures img {
+    width:375px;
     border-radius: 2px;
+    border: 2px solid var(--border-1-color);
 }
 
-.skills-section .cells .cell span {
-    font-size: 18px;
+/*outreach*/
+
+.outreach {
+    display: flex;
+    margin-bottom: 250px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 2px solid var(--text-color);
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 25px;
+    gap: 80px;
+    height: 700px;
+    position: relative;
+}
+
+.outreach .text {
+    border: 2px solid var(--border-1-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.outreach .offerings {
+    border: 2px solid var(--border-1-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.outreach .offerings video {
+    display: block;
+    margin: 0 auto;
+    width: 465px;
+    margin-bottom: 10px;
+}
+
+.outreach .offerings .videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.outreach .offerings .videos video{
+    padding-top: 20px;
+    width: 350px;
 }
 
 
+ /*cv*/
 
-@media (max-width: 850px) {
-    /* SECTION 1: Hero */
-    .hero-section .text h2 {
-        font-size: 35px;
+.cv {
+    margin-bottom: 250px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 2px solid var(--text-color);
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 700px;
+    position: relative;
+    text-align: center;
+}
+
+.cv .cv-container {
+    border: 2px solid var(--border-1-color);
+    background-color: rgb(99, 99, 99);
+}
+
+.cv img {
+    width: 1000px;
+    border: 1px solid var(--border-1-color);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*contact*/
+
+.contact {
+    display: block;
+    margin-bottom: 250px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 2px solid var(--text-color);
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.contact form {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    text-align: left;
+}
+
+.contact form input, .contact form textarea {
+    font-family: 'Playfair';
+    border: 2px solid var(--border-1-color);
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+
+.contact form button {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Playfair';
+    color: #ffff;
+    background-color: var(--border-1-color);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.contact form button:hover {
+    filter: brightness(.9);
+}
+
+/*responsivity*/
+
+/*1375*/
+@media (max-width: 1375px) {
+    .artwork .pictures img {
+        width: 450px;
+    }
+
+    .outreach .offerings video {
+        width: 425px;
     }
 }
 
-@media (max-width: 740px) {
-    /* SECTION 1: Hero */
-    .hero-section {
-        flex-direction: column-reverse;
+/*1325*/
+@media (max-width: 1325px) {
+    .outreach {
+        gap: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 23px;
     }
 
-    .hero-section .headshot img {
+    .outreach .offerings video {
+        width: 400px;
+    }
+}
+
+/*1200*/
+@media (max-width: 1200px) {
+    /*bio*/
+    .bio {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .bio .text {
+        font-size: 22px;
+        margin-right: 50px;
+    }
+
+    /*outreach*/
+    .outreach {
+        gap: 50px;
+        font-size: 21px;
+    }
+    .outreach .offerings video {
+        width: 350px;
+    }
+    .outreach .offerings .videos video {
+        padding-top: 10px;
         width: 300px;
     }
 
+    /*cv*/
+    .cv {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .cv img {
+        width: 850px;
+    }
 }
 
-@media (max-width: 600px) {
-    /*NAVBAR*/
-    nav {
-        padding: 0, 20px;
+/*1125*/
+@media (max-width: 1125px) {
+    /*artwork*/
+    .artwork .pictures img {
+        width: 600px;
     }
-    nav .right a span {
+
+    /*outreach*/
+    .outreach .offerings video {
+        width: 300px;
+    }
+    .outreach .offerings .videos video{
+        padding-top: 10px;
+        width: 250px;
+    }
+}
+
+/*1000*/
+@media (max-width: 1000px) {
+    /*bio*/
+    .bio .text {
+        font-size: 20px;
+    }
+
+    /*artwork*/
+    .artwork .pictures img {
+        width: 500px;
+    }
+
+    /*outreach*/
+    .outreach {
+        flex-direction: column;
+        height: 1000px;
+    }
+
+    .outreach .offerings video {
+        width: 450px;
+        margin-left: 0;
+    }
+
+    /*cv*/    
+    .cv img {
+        width: 650px;
+    }
+
+    /*contact*/
+    .contact form {
+        width: 500px;
+    }
+}
+
+/*875*/
+@media (max-width: 875px) {
+    /*bio*/
+    .bio {
+        flex-direction: column-reverse;
+    }
+
+    .bio .text {
+        font-size: 22px;
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 50px;
+    }
+
+    .bio .headshot img {
+        width: 250px;
+    }
+
+    .links .pc {
         display: none;
     }
-
-    nav .right a {
-        font-size: 22px;
+    
+    .links .mobile {
+        display: flex;
+        justify-content: space-between;
     }
 
-    nav .right a:last-child {
-        color: var(--text-color);
-        background-color: transparent;
-        padding: 0;
-
+    /*artwork*/
+    .artwork .pictures img {
+        width: 250px;
     }
 
-    /* SECTION 1: Hero */
-    .hero-section {
-        padding: 0 20px;
+    /*cv*/    
+    .cv img {
+        width: 550px;
     }
 
-    .hero-section .text h2 {
-        font-size: 30px;
+    /*contact*/
+    .contact form {
+        width: 400px;
+    }
+}
+
+/*700*/
+@media (max-width: 700px) {
+    /*outreach*/
+    .outreach .offerings video {
+        width: 300px;
+        margin-left: 0;
     }
 
-    /* SECTION 2: Skills */
-    .skills-section {
-        padding: 0 20px;
+    /*cv*/
+    .cv {
+        padding-left: 30px;
+        padding-right: 30px;
     }
-    .skills-section .cells .cell span {
-        font-size: 16px;
+    .cv img {
+        width: 450px;
     }
 
+    /*contact*/
+    .contact {
+        padding-left: 10px;
+        padding-right: 10px;        
+    }
+
+    .contact form {
+        width: 300px;
+    }
+    
+}
+
+/*500*/
+@media (max-width: 500px) {
+    /*heading*/
+    .heading {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    /*bio*/
+    .bio {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .bio .text {
+        font-size: 20px;
+        margin-right: 0;
+    }
+
+    /*outreach*/
+    .outreach {
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 2300px;
+    }
+
+    .outreach .offerings video {
+        width: 250px;
+    }
+
+    /*cv*/
+    .cv img {
+        width: 250px;
+    }
+
+    /*contact*/
+    .contact form {
+        width: 250px;
+    }
 }
