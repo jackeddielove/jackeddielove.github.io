@@ -7,6 +7,7 @@
     --layer-1: gold;
     --layer-2: yellow;
     --layer-3: palegreen;
+    --layer-4: turquoise;
     /* --leftMargin: 50px; */
 }
 
@@ -37,18 +38,20 @@ p {
     margin-bottom: 10px;
 }
 
+.space {
+    padding: 50px;
+    background-color: var(--layer-4);
+    border: 2px solid black;
+    margin: 10px 10px;
+}
+
 /*heading*/
 
 .heading {
-    /* margin-bottom: 10px;
-    padding-top: 20px; */
-    /* margin-left: 80px; */
-    /* --leftMargin: 50px;
-
-    margin-left: var(--leftMargin); */
     background-color: var(--layer-2);
     border: 2px solid black;
     margin: 10px 10px;
+    padding: 10px 10px;
 }
 
 .heading a {
@@ -56,7 +59,8 @@ p {
     font-size: 22px;
     font-weight: 600;
     border: 2px solid black;
-    margin: 10px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: var(--layer-3);
 }
 
@@ -66,14 +70,6 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-bottom: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
-    border: 2px solid var(--text-color);
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 30px;
-    padding-bottom: 30px; */
     border: 2px solid black;
     margin: 10px 10px;
     background-color: var(--layer-2);
@@ -82,9 +78,9 @@ p {
 .bio .text {
     flex: 5;
     font-size: 25px;
-    /* margin-right: 80px; */
     border: 2px solid black;
     margin: 10px 10px;
+    padding: 20px 20px;
     background-color: var(--layer-3);
 }
 
@@ -105,11 +101,10 @@ p {
 /*links*/
 
 .links {
-    /* margin-bottom: 250px;
-    margin-left: 80px;
-    margin-right: 80px; */
+
     border: 2px solid black;
     margin: 10px 10px;
+    padding: 10px 10px;
     background-color: var(--layer-2);
 }
 
@@ -118,7 +113,8 @@ p {
     font-size: 22px;
     font-weight: 600;
     border: 2px solid black;
-    margin: 10px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: var(--layer-3);
 }
 
@@ -134,12 +130,6 @@ p {
 /*artwork*/
 
 .artwork {
-    /* padding-left: 50px;
-    padding-right: 50px;
-    border: 2px solid var(--text-color);
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 250px; */
     border: 2px solid black;
     margin: 10px 10px;
     background-color: var(--layer-2);
@@ -148,10 +138,7 @@ p {
 .artwork .pictures {
     display: flex;
     justify-content: center;
-    /* gap: 20px; */
     flex-wrap: wrap;
-    /* padding-bottom: 50px;
-    padding-top: 50px; */
     border: 2px solid black;
     margin: 10px 10px;
     background-color: var(--layer-3);
@@ -159,8 +146,6 @@ p {
 
 .artwork .pictures img {
     width:375px;
-    /* border-radius: 2px;
-    border: 2px solid var(--border-1-color); */
     border: 2px solid black;
     margin: 10px 10px;
 }
@@ -169,20 +154,6 @@ p {
 
 .outreach {
     display: flex;
-    /* align-items: center; */
-
-    /* margin-bottom: 250px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border: 2px solid var(--text-color);
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: 25px;
-    gap: 80px;
-    height: 700px;
-    position: relative; */
     font-size: 25px;
     border: 2px solid black;
     margin: 10px 10px;
@@ -190,32 +161,20 @@ p {
 }
 
 .outreach .text {
-    /* border: 2px solid var(--border-1-color);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px; */
+    font-size: 25px;
     border: 2px solid black;
     margin: 10px 10px;
+    padding: 20px 20px;
     background-color: var(--layer-3);
 }
 
 .outreach .offerings {
-    /* border: 2px solid var(--border-1-color);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px; */
     border: 2px solid black;
     margin: 10px 10px;
     background-color: var(--layer-3);
 }
 
 .outreach .offerings video {
-    /* display: block;
-    margin: 0 auto;
-    width: 465px;
-    margin-bottom: 10px; */
     border: 2px solid black;
     margin: 10px 10px;
 }
@@ -226,11 +185,10 @@ p {
     justify-content: center;
     border: 2px solid black;
     margin: 10px 10px;
-    background-color: turquoise;
+    background-color: var(--layer-4);
 }
 
 .outreach .offerings .videos video{
-    /* padding-top: 20px; */
     width: 350px;
     border: 2px solid black;
     margin: 10px 10px;
