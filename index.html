@@ -17,11 +17,10 @@
     <title>Portfolio</title>
 </head>
 
-<style>
+<!-- <style>
     .tooltip {
       position: relative;
       display: inline-block;
-      /* border-bottom: 1px dotted black; */
     }
     
     .tooltip .tooltiptext {
@@ -29,12 +28,10 @@
       width: 200px;
       background-color: rgb(232, 212, 111);
       color: black;
-      /* text-align: center; */
-      /* border-radius: 6px; */
+
       border: 1px solid black;
       padding: 5px 5px;
     
-      /* Position the tooltip */
       position: absolute;
       z-index: 1;
     }
@@ -42,7 +39,7 @@
     .tooltip:hover .tooltiptext {
       visibility: visible;
     }
-</style>
+</style> -->
 
 <body>
 
@@ -95,9 +92,11 @@
             <a href="#artwork">Artwork</a>
         </div>
 
-        <section class="artwork" style="height:1000px; position: relative;">
+        <!-- <section class="artwork" style="height:1000px; position: relative;"> -->
+        <section class="artwork">
 
-            <div class="pictures" style="max-height: 100%; overflow: auto;">
+            <!-- <div class="pictures" style="max-height: 100%; overflow: auto;"> -->
+            <div class="pictures">
                 <div class="tooltip">
                     <img src="images/apeirotope_rhino.webp" alt="an apeirotope approximation rendered in rhino">
                     <!-- <span class="tooltiptext">An apeirotope is a theoretical object with infinitely many facets, represented here as hexagons. If the orb were continued to its north pole, the hexagons would get infinitely small. A light shined from the north pole toward the ground would produce a regular hexagonal tiling on the floor extending infinitely in every direction.</span> -->
@@ -144,12 +143,12 @@
                 <p>I define math outreach as:</p>
                 <p style="font-weight: 600;">The endeavor to create positive mathematical experiences for others.</p>
                 <p>I don't think that everyone needs to love math. I don't even think that mathematics is all that useful to most of us.</p>
-                <p>I do think that math is misunderstood and underappreciated as a creative practice.</p>
-                <p>I do math outreach to grow that understanding and appreciation because there is something special about mathematics and there is something special about expanding our perspectives.</p>
-                <p>I find joy in mathematics, and I do math outreach to share that joy with others.</p>
+                <p>I do think that math is misunderstood and underappreciated as a creative practice, and I do outreach to grow that understanding and appreciation in others.</p>
+                <p>I believe there is something special about mathematics and there is something special about expanding our perspectives. I find joy in the art of mathematics, and I do outreach to share that joy with others.</p>
             </div>
 
-            <div class="offerings" style="max-height: 100%; overflow: auto;">
+            <!-- <div class="offerings" style="max-height: 100%; overflow: auto;"> -->
+            <div class="offerings">
                 <p>I am available to visit K-12 classrooms, teacher development days, or any other space of learning and curiosity. <a href = "#contact" style="font-weight: 600; color: var(--text-color); text-decoration-line: underline;">Contact me</a> to book a date.</p>
                 <p style="font-weight: 600;">Current offerings</p>
 
@@ -190,7 +189,8 @@
         </div>
 
         <section class="cv">
-            <div class="cv-container" style="max-height: 100%; overflow: auto;">
+            <!-- <div class="cv-container" style="max-height: 100%; overflow: auto;"> -->
+            <div class="cv-container">
                 <img src="images/cv-1.webp">
                 <img src="images/cv-2.webp">
                 <img src="images/cv-3.webp">
@@ -204,14 +204,11 @@
             <a href="#contact">Contact</a>
         </div>
 
-
-        <!-- <form method="post" action="mailto:youremail@youremail.com" >
-            <input type="submit" value="Send Email" /> 
-            </form> -->
-
-
         <section class="contact">
-        <form method="post" action="mailto:jackeddielove@gmail.com" >
+            <div class="text">
+                <p>jack.eddie.love@gmail.com</p>
+            </div>
+        <!-- <form method="post" action="mailto:jackeddielove@gmail.com" >
                 <label for="name">Name</label>
                 <input type="text" id="name">
 
@@ -222,7 +219,7 @@
                 <textarea id="message" cols="30" rows="10"></textarea>
 
                 <button type="submit">Send Message</button>
-            </form>
+            </form> -->
         </section>
 
     </main>
