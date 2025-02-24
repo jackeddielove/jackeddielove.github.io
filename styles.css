@@ -8,7 +8,6 @@
     --layer-2: yellow;
     --layer-3: palegreen;
     --layer-4: turquoise;
-    /* --leftMargin: 50px; */
 }
 
 * {
@@ -19,7 +18,7 @@
 
 html {
     scroll-behavior: smooth;
-background-color: var(--layer-0);
+    background-color: var(--layer-0);
 }
 
 body {
@@ -30,8 +29,14 @@ body {
 }
 
 a {
-    color: var(--link-color);
     text-decoration: none;
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+    border: 2px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: var(--layer-3);
 }
 
 p {
@@ -54,7 +59,7 @@ p {
     padding: 10px 10px;
 }
 
-.heading a {
+/* .heading a {
     color: var(--text-color);
     font-size: 22px;
     font-weight: 600;
@@ -62,13 +67,13 @@ p {
     padding-left: 10px;
     padding-right: 10px;
     background-color: var(--layer-3);
-}
+} */
 
 /*bio*/
 
 .bio {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     border: 2px solid black;
     margin: 10px 10px;
@@ -76,26 +81,33 @@ p {
 }
 
 .bio .text {
-    flex: 5;
+    width:1000px;
     font-size: 25px;
     border: 2px solid black;
     margin: 10px 10px;
-    padding: 20px 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 16px;
     background-color: var(--layer-3);
 }
 
 .bio .headshot {
-    flex: 2;
     border: 2px solid black;
     margin: 10px 10px;
+    margin-left: 0;
     text-align: center;
     background-color: var(--layer-3);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .bio .headshot img {
-    width: 350px;
+    width:20vw;
+    /* width: 350px; */
     border: 2px solid black;
-    margin: 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 6px;
 }
 
 /*links*/
@@ -108,15 +120,6 @@ p {
     background-color: var(--layer-2);
 }
 
-.links a {
-    color: var(--text-color);
-    font-size: 22px;
-    font-weight: 600;
-    border: 2px solid black;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: var(--layer-3);
-}
 
 .links .pc {
     display: flex;
@@ -145,7 +148,7 @@ p {
 }
 
 .artwork .pictures img {
-    width:375px;
+    width: 22vw;
     border: 2px solid black;
     margin: 10px 10px;
 }
@@ -154,46 +157,62 @@ p {
 
 .outreach {
     display: flex;
+    justify-content: space-between;
+    gap: 10px;
     font-size: 25px;
     border: 2px solid black;
     margin: 10px 10px;
+    padding: 10px;
     background-color: var(--layer-2);
+    align-items: center;
+
 }
 
-.outreach .text {
-    font-size: 25px;
+.outreach .philosophy {
+    flex: 5;
+}
+
+.outreach .philosophy .content {
     border: 2px solid black;
-    margin: 10px 10px;
-    padding: 20px 20px;
     background-color: var(--layer-3);
+    margin-top: 10px;
+    padding: 20px;
 }
 
 .outreach .offerings {
+    flex: 5;
+}
+
+.outreach .offerings .content {
     border: 2px solid black;
-    margin: 10px 10px;
     background-color: var(--layer-3);
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.outreach .offerings .vid {
+    text-align: center;
+    margin: 0 auto;
 }
 
 .outreach .offerings video {
-    border: 2px solid black;
     margin: 10px 10px;
+    width: 40vw;
 }
 
-.outreach .offerings .videos {
+/* .outreach .offerings .videos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     border: 2px solid black;
-    margin: 10px 10px;
     background-color: var(--layer-4);
-}
+} */
 
-.outreach .offerings .videos video{
+/* .outreach .offerings .videos video{
     width: 350px;
     border: 2px solid black;
     margin: 10px 10px;
-}
-
+} */
 
  /*cv*/
 
@@ -285,10 +304,11 @@ p {
     filter: brightness(.9);
 } */
 
+
 /* responsivity */
 
 /* 1375 */
-@media (max-width: 1375px) {
+/* @media (max-width: 1375px) {
     .artwork .pictures img {
         width: 450px;
     }
@@ -296,10 +316,10 @@ p {
     .outreach .offerings video {
         width: 425px;
     }
-}
+} */
 
 /* 1325 */
-@media (max-width: 1325px) {
+/* @media (max-width: 1325px) {
     .outreach {
         gap: 50px;
         padding-left: 50px;
@@ -310,22 +330,22 @@ p {
     .outreach .offerings video {
         width: 400px;
     }
-}
+} */
 
 /* 1200 */
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) { */
     /* bio */
-    .bio {
+    /* .bio {
         padding-left: 50px;
         padding-right: 50px;
     }
     .bio .text {
         font-size: 22px;
         margin-right: 50px;
-    }
+    } */
 
     /* outreach */
-    .outreach {
+    /* .outreach {
         gap: 50px;
         font-size: 21px;
     }
@@ -335,50 +355,50 @@ p {
     .outreach .offerings .videos video {
         padding-top: 10px;
         width: 300px;
-    }
+    } */
 
     /* cv */
-    .cv {
+    /* .cv {
         padding-left: 50px;
         padding-right: 50px;
     }
 
     .cv img {
         width: 850px;
-    }
-}
+    } */
+/* } */
 
 /*1125*/
-@media (max-width: 1125px) {
+/* @media (max-width: 1125px) { */
     /*artwork*/
-    .artwork .pictures img {
+    /* .artwork .pictures img {
         width: 600px;
-    }
+    } */
 
     /*outreach*/
-    .outreach .offerings video {
+    /* .outreach .offerings video {
         width: 300px;
     }
     .outreach .offerings .videos video{
         padding-top: 10px;
         width: 250px;
-    }
-}
+    } */
+/* } */
 
 /*1000*/
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) { */
     /*bio*/
-    .bio .text {
+    /* .bio .text {
         font-size: 20px;
-    }
+    } */
 
     /*artwork*/
-    .artwork .pictures img {
+    /* .artwork .pictures img {
         width: 500px;
-    }
+    } */
 
     /*outreach*/
-    .outreach {
+    /* .outreach {
         flex-direction: column;
         height: 1000px;
     }
@@ -386,23 +406,23 @@ p {
     .outreach .offerings video {
         width: 450px;
         margin-left: 0;
-    }
+    } */
 
     /*cv*/    
-    .cv img {
+    /* .cv img {
         width: 650px;
-    }
+    } */
 
     /*contact*/
-    .contact form {
+    /* .contact form {
         width: 500px;
     }
-}
+} */
 
 /* 875 */
-@media (max-width: 875px) {
+/* @media (max-width: 875px) { */
     /* bio */
-    .bio {
+    /* .bio {
         flex-direction: column-reverse;
     }
 
@@ -415,53 +435,53 @@ p {
 
     .bio .headshot img {
         width: 250px;
-    }
+    } */
 
     /* links */
-    .links .pc {
+    /* .links .pc {
         display: none;
     }
     
     .links .mobile {
         display: flex;
         justify-content: space-between;
-    }
-
-    /* artwork */
-    .artwork .pictures img {
-        width: 250px;
-    }
-
-    /* cv */    
-    .cv img {
-        width: 550px;
     } */
 
+    /* artwork */
+    /* .artwork .pictures img {
+        width: 250px;
+    } */
+
+    /* cv */    
+    /* .cv img {
+        width: 550px;
+    }  */
+
     /* contact */
-    .contact form {
+    /* .contact form {
         width: 400px;
     }
-}
+} */
 
 /* 700 */
-@media (max-width: 700px) {
+/* @media (max-width: 700px) { */
     /* outreach */
-    .outreach .offerings video {
+    /* .outreach .offerings video {
         width: 300px;
         margin-left: 0;
-    }
+    } */
 
     /* cv */
-    .cv {
+    /* .cv {
         padding-left: 30px;
         padding-right: 30px;
     }
     .cv img {
         width: 450px;
-    }
+    } */
 
     /* contact */
-    .contact {
+    /* .contact {
         padding-left: 10px;
         padding-right: 10px;        
     }
@@ -469,19 +489,19 @@ p {
     .contact form {
         width: 300px;
     }
-}
+} */
 
 /* 450 */
-@media (max-width: 450px) {
+/* @media (max-width: 450px) { */
     /* heading */
-    .heading {
+    /* .heading {
         display: flex;
         justify-content: center;
         margin-left: 0px;
-    }
+    } */
 
     /* bio */
-    .bio {
+    /* .bio {
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -493,10 +513,10 @@ p {
     .links .mobile {
         margin-left: 0;
         margin-right: 0;
-    }
+    } */
 
     /* outreach */
-    .outreach {
+    /* .outreach {
         padding-left: 30px;
         padding-right: 30px;
         height: 2300px;
@@ -504,15 +524,15 @@ p {
 
     .outreach .offerings video {
         width: 250px;
-    }
+    } */
 
     /* cv */
-    .cv img {
+    /* .cv img {
         width: 250px;
-    }
+    } */
 
     /* contact */
-    .contact form {
+    /* .contact form {
         width: 250px;
     }
-}
+} */
