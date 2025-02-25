@@ -2,12 +2,18 @@
     --text-color: #1a1c20;
     --link-color: #4a76ee;
     --background-color: #eeeff1;
-    --border-1-color: #555555;
-    --layer-0: palevioletred;
+    --border-1-color: transparent;
+    --border-2-color: #555555;
+    /* --layer-0: palevioletred;
     --layer-1: gold;
     --layer-2: yellow;
     --layer-3: palegreen;
-    --layer-4: turquoise;
+    --layer-4: turquoise; */
+    --layer-0: transparent;
+    --layer-1: transparent;
+    --layer-2: transparent;
+    --layer-3: transparent;
+    --layer-4: transparent;
 }
 
 * {
@@ -24,7 +30,7 @@ html {
 body {
     font-family: 'Playfair';
     background-color: var(--layer-1);
-    border: 2px solid black;
+    border: 2px solid var(--border-2-color);
     margin: 10px 10px;
 }
 
@@ -33,7 +39,7 @@ a {
     color: var(--text-color);
     font-size: 22px;
     font-weight: 600;
-    border: 2px solid black;
+    border: 2px solid var(--border-1-color);
     padding-left: 10px;
     padding-right: 10px;
     background-color: var(--layer-3);
@@ -46,7 +52,7 @@ p {
 .space {
     padding: 50px;
     background-color: var(--layer-4);
-    border: 2px solid black;
+    border: 2px solid var(--border-2-color);
     margin: 10px 10px;
 }
 
@@ -54,7 +60,7 @@ p {
 
 .heading {
     background-color: var(--layer-2);
-    border: 2px solid black;
+    border: 2px solid var(--border-1-color);
     margin: 10px 10px;
     padding: 10px 10px;
     text-align: center;
@@ -66,7 +72,7 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 2px solid black;
+    border: 2px solid var(--border-2-color);
     margin: 10px 10px;
     background-color: var(--layer-2);
 }
@@ -74,7 +80,7 @@ p {
 .bio .text {
     width:1000px;
     font-size: 25px;
-    border: 2px solid black;
+    border: 2px solid var(--border-1-color);
     margin: 10px 10px;
     padding-top: 20px;
     padding-left: 20px;
@@ -84,7 +90,7 @@ p {
 }
 
 .bio .headshot {
-    border: 2px solid black;
+    border: 2px solid var(--border-1-color);
     margin: 10px 10px;
     margin-left: 0;
     text-align: center;
@@ -95,7 +101,7 @@ p {
 
 .bio .headshot img {
     width:20vw;
-    border: 2px solid black;
+    border: 2px solid var(--border-1-color);
     margin-top: 10px;
     margin-bottom: 6px;
 }
@@ -104,7 +110,7 @@ p {
 
 .links {
 
-    border: 2px solid black;
+    border: 2px solid var(--border-2-color);
     margin: 10px 10px;
     padding: 10px 10px;
     background-color: var(--layer-2);
@@ -123,7 +129,7 @@ p {
 /*artwork*/
 
 .artwork {
-    border: 2px solid black;
+    border: 2px solid var(--border-2-color);
     margin: 10px 10px;
     background-color: var(--layer-2);
 }
@@ -132,14 +138,14 @@ p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border: 2px solid black;
+    border: 2px solid var(--border-1-color);
     margin: 10px 10px;
     background-color: var(--layer-3);
 }
 
 .artwork .pictures img {
     width: 22vw;
-    border: 2px solid black;
+    border: 2px solid var(--border-1-color);
     margin: 10px 10px;
 }
 
@@ -150,20 +156,22 @@ p {
     justify-content: space-between;
     gap: 10px;
     font-size: 25px;
-    border: 2px solid black;
+    border: 2px solid var(--border-2-color);
     margin: 10px 10px;
     padding: 10px;
     background-color: var(--layer-2);
     align-items: center;
-
 }
+
+.outreach a {
+margin-left: 10px;}
 
 .outreach .philosophy {
     flex: 5;
 }
 
 .outreach .philosophy .content {
-    border: 2px solid black;
+    border: 2px solid var(--border-1-color);
     background-color: var(--layer-3);
     margin-top: 10px;
     padding: 20px;
@@ -174,7 +182,7 @@ p {
 }
 
 .outreach .offerings .content {
-    border: 2px solid black;
+    border: 2px solid var(--border-1-color);
     background-color: var(--layer-3);
     margin-top: 10px;
     padding: 20px;
@@ -196,7 +204,7 @@ p {
     height: 700px;
     position: relative;
     text-align: center;
-    border: 2px solid black;
+    border: 2px solid var(--border-2-color);
     margin: 10px 10px;
     background-color: var(--layer-2);
 }
@@ -204,14 +212,14 @@ p {
 .cv .cv-container {
     max-height: 97%;
     overflow: auto;
-    border: 2px solid black;
+    border: 2px solid var(--border-1-color);
     margin: 10px 10px;
     background-color: var(--layer-3);
 }
 
 .cv img {
     width: 75vw;
-    border: 2px solid black;
+    border: 2px solid var(--border-1-color);
     margin-top: 10px;
     margin-bottom: 6px;}
 
@@ -219,8 +227,8 @@ p {
 
 .contact {
     text-align: center;
-    font-size: 25px;
-    border: 2px solid black;
+    /* font-size: 25px; */
+    border: 2px solid var(--border-2-color);
     margin: 10px 10px;
     padding: 10px;
     background-color: var(--layer-2);
@@ -235,11 +243,15 @@ p {
     }
 
     .bio .headshot img {
-        width:23vw;
+        width: 23vw;
     }
 
     .artwork .pictures img {
         width: 21vw;
+    }
+
+    .outreach {
+        font-size: 24px;
     }
 }
 
@@ -250,7 +262,7 @@ p {
     }
 
     .bio .headshot img {
-        width:24vw;
+        width: 24vw;
     }
 
     .artwork .pictures img {
@@ -311,7 +323,7 @@ p {
     }
 
     .bio .headshot img {
-        width:35vw;
+        width: 35vw;
     }
 
     .links .pc {
@@ -331,7 +343,7 @@ p {
 /* 606 */
 @media (max-width: 606px) {
     .bio .headshot img {
-        width:45vw;
+        width: 45vw;
     }
 
     .artwork .pictures img {
