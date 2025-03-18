@@ -215,11 +215,22 @@ p {
     margin-left: 10px;
 }
 
-.outreach .philosophy {
+.outreach .testimonials {
     flex: 5;
 }
 
-.outreach .philosophy .content {
+.outreach .testimonials .content {
+    font-style: italic;
+    background-color: var(--layer-3);
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.outreach .background {
+    flex: 5;
+}
+
+.outreach .background .content {
     background-color: var(--layer-3);
     margin-top: 10px;
     padding: 20px;
@@ -242,7 +253,7 @@ p {
 
 .outreach .offerings video {
     margin: 10px 10px;
-    width: 40vw;
+    width: 30vw;
 }
 
  /*cv*/
