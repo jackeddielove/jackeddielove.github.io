@@ -84,7 +84,6 @@ p {
 .bio .text {
     width:1000px;
     font-size: 25px;
-    /* border: 2px solid var(--border-3-color); */
     margin: 10px 10px;
     padding-top: 20px;
     padding-left: 20px;
@@ -94,7 +93,6 @@ p {
 }
 
 .bio .headshot {
-    /* border: 2px solid var(--border-3-color); */
     margin: 10px 10px;
     margin-left: 0;
     text-align: center;
@@ -105,7 +103,6 @@ p {
 
 .bio .headshot img {
     width:20vw;
-    /* border: 2px solid var(--border-3-color); */
     margin-top: 10px;
     margin-bottom: 6px;
 }
@@ -114,7 +111,6 @@ p {
 
 .links {
 
-    /* border: 2px solid var(--border-3-color); */
     margin: 10px 10px;
     padding: 10px 10px;
     background-color: var(--layer-2);
@@ -142,16 +138,63 @@ p {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* border: 2px solid var(--border-3-color); */
     margin: 10px 10px;
     background-color: var(--layer-3);
 }
 
 .artwork .pictures img {
     width: 22vw;
-    /* border: 2px solid var(--border-3-color); */
     margin: 10px 10px;
 }
+
+/*tutoring*/
+
+.tutoring {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 25px;
+    border: 2px solid var(--border-3-color);
+    margin: 10px 10px;
+    padding: 10px;
+    background-color: var(--layer-2);
+}
+
+.tutoring a {
+    margin-left: 10px;
+}
+
+.tutoring .background {
+    flex: 5;
+}
+
+.tutoring .background .content {
+    background-color: var(--layer-3);
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.tutoring .testimonials {
+    flex: 5;
+}
+
+.tutoring .testimonials .content {
+    background-color: var(--layer-3);
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.tutoring .rates {
+    flex: 5;
+}
+
+.tutoring .rates .content {
+    background-color: var(--layer-3);
+    margin-top: 10px;
+    padding: 20px;
+}
+
+
 
 /*outreach*/
 
@@ -164,7 +207,6 @@ p {
     margin: 10px 10px;
     padding: 10px;
     background-color: var(--layer-2);
-    /* align-items: center; */
 }
 
 .outreach a {
@@ -176,7 +218,6 @@ p {
 }
 
 .outreach .philosophy .content {
-    /* border: 2px solid var(--border-3-color); */
     background-color: var(--layer-3);
     margin-top: 10px;
     padding: 20px;
@@ -187,7 +228,6 @@ p {
 }
 
 .outreach .offerings .content {
-    /* border: 2px solid var(--border-3-color); */
     background-color: var(--layer-3);
     margin-top: 10px;
     padding: 20px;
@@ -217,14 +257,12 @@ p {
 .cv .cv-container {
     max-height: 97%;
     overflow: auto;
-    /* border: 2px solid var(--border-3-color); */
     margin: 10px 10px;
     background-color: var(--layer-3);
 }
 
 .cv img {
     width: 75vw;
-    /* border: 2px solid var(--border-3-color); */
     margin-top: 10px;
     margin-bottom: 6px;}
 
@@ -232,8 +270,6 @@ p {
 
 .contact {
     text-align: center;
-    /* font-size: 25px; */
-    /* border: 2px solid var(--border-3-color); */
     margin: 10px 10px;
     padding: 10px;
     background-color: var(--layer-2);
@@ -255,6 +291,10 @@ p {
         width: 21vw;
     }
 
+    .tutoring {
+        font-size: 24px;
+    }
+
     .outreach {
         font-size: 24px;
     }
@@ -274,6 +314,10 @@ p {
         width: 20vw;
     }
 
+    .tutoring {
+        font-size: 22px;
+    }
+
     .outreach {
         font-size: 22px;
     }
@@ -286,6 +330,10 @@ p {
 /* 1102 */
 @media (max-width: 1102px) {
     .bio .text {
+        font-size: 21px;
+    }
+
+    .tutoring {
         font-size: 21px;
     }
 
@@ -310,6 +358,10 @@ p {
 
     .artwork .pictures img {
         width: 25vw;
+    }
+
+    .tutoring {
+        flex-direction: column;
     }
 
     .outreach {
@@ -347,6 +399,12 @@ p {
 
 /* 606 */
 @media (max-width: 606px) {
+
+    a {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .bio .headshot img {
         width: 45vw;
     }
@@ -354,10 +412,6 @@ p {
     .artwork .pictures img {
         width: 33vw;
     }
-
-    /* .outreach .offerings .content {
-        padding: 12px;
-    } */
 
     .outreach .offerings video {
         margin-left: 0;
@@ -377,6 +431,10 @@ p {
     }
 
     .bio .text {
+        font-size: 19px;
+    }
+
+    .tutoring {
         font-size: 19px;
     }
 
