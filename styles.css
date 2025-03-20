@@ -381,7 +381,7 @@ p {
         flex-direction: column-reverse;
     }
 
-    .outreach .offerings video {
+    .outreach .offerings img {
         width: 75vw;
     }
 }
@@ -426,7 +426,7 @@ p {
         width: 33vw;
     }
 
-    .outreach .offerings video {
+    .outreach .offerings img {
         margin-left: 0;
         margin-right: 0;  
         width: 70vw;   
@@ -455,7 +455,7 @@ p {
         font-size: 19px;
     }
 
-    .outreach .offerings video {
+    .outreach .offerings img {
         width: 60vw;   
     }
 }
