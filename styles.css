@@ -246,12 +246,12 @@ p {
     padding: 20px;
 }
 
-.outreach .offerings .vid {
+.outreach .offerings .title-slide {
     text-align: center;
     margin: 0 auto;
 }
 
-.outreach .offerings video {
+.outreach .offerings img {
     margin: 10px 10px;
     width: 30vw;
 }
